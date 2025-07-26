@@ -15,12 +15,28 @@
             width: 480px;
             padding: 8px;
             margin: 0 auto;
+
+        
         }
 
         section {
             background-color: darkslategray;
             padding: 8px;
-            
+            margin-bottom: 12px;
+        }
+
+
+        @media screen and (min-width: 800px) {
+
+            .container { 
+                width: 800px;
+                display: flex;
+                }
+                
+            section {
+                flex-basis: 50%;
+                margin: 5px;
+            }
         }
     </style>
 
