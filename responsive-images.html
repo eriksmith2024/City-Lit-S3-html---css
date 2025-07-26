@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grow {
+            width: 100%;
+            height: auto;
+        }
+
+        .constrain {
+            max-width: 100%;    /* max width constrains the size to 100% size of original image so as not to damage the img quality */
+            height: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1> Responsive Images in CSS</h1>
+
+    <h2>Width</h2>
+
+
+    <img class="grow" src="images/big-jesus.jpg">
+
+    <p> If we use width 100% the image is able to grow larger than its original pixel dimensions.
+        This means we will lose image quality.
+    </p>
+
+    <h2> Max Width</h2>
+    <img class="constrain" src="images/big-jesus.jpg">
+    
+    <p> If we use max-width the image can shrink but it can't grow any larger 
+        than its original width so the quality is preserved</p>
+
+    <h2>The Picture Element</h2>
+
+    <p> The picture element allows us to set to different image sources. This might be 
+        helpful if we need to load a larger image for bigger screens</p>
+    
+        <picture> 
+            
+            <source media="(min-width:640px)" srcset="images/golden-gate-lg.jpg">
+            <img src="images/big-jesus.jpg" class="constrain">
+        
+        </picture>
+</body>
+</html>

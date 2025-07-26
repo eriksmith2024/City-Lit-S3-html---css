@@ -1,0 +1,49 @@
+<doctype html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <style>
+            section {
+                background-color: gold;
+                padding: 6px;
+                margin: 6px;
+            }
+
+            /* The container is what changes the mode to display flex & changes the flow */
+            .container {
+                display: flex;
+            }
+
+             /* The items inside the flex display container then are what you ammend the size along the new display flow */
+            .item { flex-basis: 50%;}
+
+        </style>
+
+    
+
+        </head>
+        
+        <body>
+
+            <h1> Flexible Box Model </h1>
+
+            <p> To use flexible box model we must first create a parent container to hold our flex item</p>
+
+            <div class="container"> <!--The key to making displat flex work is the container-->
+                <section> First Item </section>
+                <section> Second Item is longer </section>
+            </div>
+
+            <p>  Once items are in flex display mode they no longer inherit their width from their parent container but take it from their content by default</p>
+
+
+              <div class="container"> <!--The key to making displat flex work is the container-->
+                <section class="item"> First Item </section>
+                <section class="item"> Second Item is longer </section>
+            </div>
+
+       
+        </body>
+
+    </html>
+</doctype>
