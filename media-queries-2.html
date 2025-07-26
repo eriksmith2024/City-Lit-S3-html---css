@@ -12,7 +12,17 @@
 
         .container {
             background-color: blueviolet;
-            width: 80px;
+            width: 480px;
+            padding: 8px;
+            margin: 0 auto; /*Used to center it  */
+        }
+
+        @media screen and (min-width:800px) {
+            .container { 
+                width: 640px;
+                background-color: aqua;
+            }
+
         }
     </style>
 </head>
