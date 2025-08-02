@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        .container {
+            background-color: blueviolet;
+            width: 640px;
+            margin: 0 auto;
+            padding: 4px;
+        }
+
+        section {
+            background-color: cornflowerblue;
+            color:azure;
+            padding: 4px;
+            margin: 4px 0;
+        }
+
+        @media screen and (min-width:960px) {
+
+            .container { 
+                width: 960px;
+                display: flex;
+            }
+
+            section {
+                flex-basis: 50%;
+                margin
+            }
+
+
+
+        }
+
+    </style>
+
+
+
 </head>
 <body>
+    <div class="container">
+        <section>
+            <h2>Item One</h2>
+        </section>
+        
+        <section>
+            <h2>Item Two</h2>
+        </section>
 
-    
+
+
+
+    </div>
+
+
     
 </body>
 </html>
