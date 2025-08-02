@@ -9,9 +9,41 @@
 
         .container {
             background-color: bisque;
-            width:800px;
+            width:60%;
+            padding: 80px;
             margin: 0 auto;
-            position: relative;
+            position: relative;     /*  Try static and will position to the viewport same as deleting */
+        }
+
+        .one {
+            background-color: aquamarine;
+            padding: 10px;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .two {
+            background-color: chartreuse;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .three {
+            background-color: blueviolet;
+            padding:8px;
+            position: absolute;
+            bottom: 0;
+            left:0;
+        }
+          .four {
+            background-color:red;
+            padding:8px;
+            position: absolute;
+            bottom: 0;
+            right:0;
         }
 
 
@@ -24,10 +56,10 @@
     <h1> Relative and Absolute Position</h1>
 
     <div class="container">
-        <div class="One">One</div>
-        <div class="Two">Two</div>
+        <div class="one">One</div>
+        <div class="two">Two</div>
         <div class="three">Three</div>
-        <div class="Four">Four</div>
+        <div class="four">Four</div>
         
     </div>
     
