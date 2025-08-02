@@ -11,8 +11,22 @@
         width: 800px;
         margin: 16px auto;
         padding: 8px;
-        
+        /* position: relative;  without this will be top left of the screen places top left of container position relative to container */
     }
+
+     .pic {
+        position: relative;   /* without this will be top left of the screen places top left of container position relative to container*/
+    }
+    
+    .cap {
+        background-color: gold;
+        padding: 8px;
+        position: absolute;
+        top: 38%;
+        left: 38%;
+    }
+
+   
 
 </style>
 
@@ -22,9 +36,10 @@
     <section>
         <div class="pic">
             <img src="images/chillies.jpg">
-        </div>
-        <div class="cap">
-            <p>Red Hot Chilli Peppers</p>
+        
+            <div class="cap">
+                <p>Red Hot Chilli Peppers</p>
+            </div>
         </div>
     </section>
     
