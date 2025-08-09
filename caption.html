@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .pic {
+        width: 800px;
+        border: solid 1px black;
+        position: relative; /* comment this out and then positioning is relative to the page window */
+    }
+
+    .cap {
+        width: 200px;
+        padding: 8px;
+        background-color: gold;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+<body>
+    <h1>Positioning to make a caption</h1>
+    <div class="pic">
+        <img src='images/pad-thai.jpg'>
+        <div class="cap"><p>Caption</p></div>
+    </div>
+    
+</body>
+</html>
